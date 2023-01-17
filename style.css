@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+}
+header h1{
+    margin-bottom: 0;
+}
+header p{
+    margin-top: 0;
+}
+main{
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#painting-area{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #888;
+}
+#painting-area div{
+    min-width: 8px;
+    min-height: 8px;
+}
+
+footer{
+    text-align: center;
+}
