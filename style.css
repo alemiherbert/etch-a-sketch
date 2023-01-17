@@ -25,18 +25,33 @@ main{
     align-items: center;
     justify-content: center;
 }
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+}
 #painting-area{
     width: 400px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #888;
+    box-sizing: content-box;
 }
 #painting-area div{
     min-width: 8px;
     min-height: 8px;
+    box-sizing: border-box;
 }
 
 footer{
     text-align: center;
+}
+.controls{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    height: 30px;
 }
